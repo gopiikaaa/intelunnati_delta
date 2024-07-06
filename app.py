@@ -173,7 +173,7 @@ def main():
     st.markdown('## How to Use')
     st.markdown('1. Upload your contract document using the "Upload your document" button.')
     st.markdown('2. Upload the template document using the "Upload the template" button.')
-    st.markdown('3. Choose between "Highlight Text" to see deviations or "Extract Clauses" in the top menu to view specific sections.')
+    st.markdown('3. Choose between "Highlight Text" to see deviations or "Extract Clauses" on the top menu to view specific sections.')
     
     # Home page for uploading documents
     if st.session_state.page == 'home':
@@ -198,7 +198,7 @@ def main():
 
         
         # Place the image below the upload buttons
-        st.image("https://i.pinimg.com/564x/6d/02/4e/6d024e072be5b902b2594f14119e2bcb.jpg", use_column_width=True, caption="Project Name")
+        st.image("https://i.pinimg.com/564x/6d/02/4e/6d024e072be5b902b2594f14119e2bcb.jpg", use_column_width=True, caption="Business Contract Validation")
 
     # Options page after submitting documents
     
