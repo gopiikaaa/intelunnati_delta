@@ -1,5 +1,6 @@
 import streamlit as st
 import re
+import fitz  # PyMuPDF
 from docx import Document
 
 # Custom CSS to set a white background, place the image at the top, ensure black font color, and style buttons
@@ -98,6 +99,14 @@ def read_docx(file):
     doc = Document(file)
     return '\n'.join([paragraph.text for paragraph in doc.paragraphs])
 
+# Read the content of a .pdf file
+def read_pdf(file):
+    doc = fitz.open(stream=file.read(), filetype="pdf")
+    text = ""
+    for page in doc:
+        text += page.get_text()
+    return text
+
 # Tokenize text into words
 def tokenize_text(text):
     words = re.findall(r'\b\w+\b', text.lower())
@@ -169,7 +178,7 @@ def main():
     if 'page' not in st.session_state:
         st.session_state.page = 'home'
 
-    # Instructions on how to use the application and the animated GIF
+    # Instructions on how to use the application
     st.markdown('## How to Use')
     st.markdown('1. Upload your contract document using the "Upload your document" button.')
     st.markdown('2. Upload the template document using the "Upload the template" button.')
@@ -177,32 +186,33 @@ def main():
     
     # Home page for uploading documents
     if st.session_state.page == 'home':
-        st.write("Upload your document and the template to highlight deviations  and view different clauses.")
+        st.write("Upload your document and the template to highlight deviations and view different clauses.")
 
         # File uploaders
-        contract_file = st.file_uploader("Upload your document", type=["txt", "docx"], key="contract")
-        template_file = st.file_uploader("Upload the template", type=["txt", "docx"], key="template")
+        contract_file = st.file_uploader("Upload your document", type=["txt", "docx", "pdf"], key="contract")
+        template_file = st.file_uploader("Upload the template", type=["txt", "docx", "pdf"], key="template")
 
         if contract_file and template_file:
             # Read the content of the uploaded files
             if contract_file.name.endswith(".txt"):
                 st.session_state.contract_text = contract_file.read().decode("utf-8")
-            else:
+            elif contract_file.name.endswith(".docx"):
                 st.session_state.contract_text = read_docx(contract_file)
+            elif contract_file.name.endswith(".pdf"):
+                st.session_state.contract_text = read_pdf(contract_file)
 
             if template_file.name.endswith(".txt"):
                 st.session_state.template_text = template_file.read().decode("utf-8")
-            else:
+            elif template_file.name.endswith(".docx"):
                 st.session_state.template_text = read_docx(template_file)
-            
+            elif template_file.name.endswith(".pdf"):
+                st.session_state.template_text = read_pdf(template_file)
 
-        
         # Place the image below the upload buttons
         st.image("https://i.pinimg.com/564x/6d/02/4e/6d024e072be5b902b2594f14119e2bcb.jpg", use_column_width=True, caption="Business Contract Validation")
 
     # Options page after submitting documents
     
-
     # Highlighted deviations page
     if st.session_state.page == 'highlighted_deviations' and st.session_state.contract_text and st.session_state.template_text:
         st.subheader("Original Document")
