@@ -34,8 +34,7 @@ The Business Contract Validation project is designed to facilitate the validatio
      ```
      streamlit run app.py
      ```
-   - Access the application locally at `http://localhost:8501`.
-
+   
 3. **Usage:**
    - Upload a contract document and a corresponding template.
    - Navigate between "Home", "Highlighted Deviations", and "Extracted Clauses" using the top menu buttons.
