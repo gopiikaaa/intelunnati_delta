@@ -40,10 +40,11 @@ The Business Contract Validation project is designed to facilitate the validatio
    - Navigate between "Home", "Highlighted Deviations", and "Extracted Clauses" using the top menu buttons.
    - View highlighted deviations between the contract and template, and extracted clauses from the contract.
 
-
 ## Team Members
-   - Gopika M Panicker
-   - Jumana Jouhar
-   - Parvathy S
-   - Aiswarya Arun
-   - Bhagya Suresh Kumar
+
+- [Gopika M Panicker](https://github.com/gopiikaaa)
+- [Jumana Jouhar](https://github.com/jumanajouhar)
+- [Parvathy S](https://github.com/ParvathyS1103)
+- [Aiswarya Arun](https://github.com/AiswaryaArun19)
+- [Bhagya Suresh Kumar](https://github.com/bhagya005)
+
