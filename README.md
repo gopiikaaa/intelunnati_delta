@@ -21,7 +21,7 @@ The Business Contract Validation project is designed to facilitate the validatio
 1. **Installation:**
    - Clone the repository:
      ```
-     git clone https://github.com/your-username/business-contract-validation.git
+     git clone https://github.com/gopiikaaa/Business-contract-validation.git
      cd business-contract-validation
      ```
    - Install dependencies:
@@ -39,9 +39,3 @@ The Business Contract Validation project is designed to facilitate the validatio
    - Upload a contract document and a corresponding template.
    - Navigate between "Home", "Highlighted Deviations", and "Extracted Clauses" using the top menu buttons.
    - View highlighted deviations between the contract and template, and extracted clauses from the contract.
-
-4. **Contributing:**
-   - Fork the repository, make changes, and submit a pull request for review.
-   - Discuss major changes with the repository owners before making modifications.
-
-
