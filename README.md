@@ -1,5 +1,5 @@
 # Business Contract Validation
-
+![Frontend of Website](frntend.png)
 ## Project Overview
 
 The Business Contract Validation project is designed to facilitate the validation of business contracts by identifying deviations from predefined templates and extracting specific clauses for analysis. This Streamlit-based application aims to streamline the process of contract analysis and ensure compliance with established templates.
