@@ -39,3 +39,11 @@ The Business Contract Validation project is designed to facilitate the validatio
    - Upload a contract document and a corresponding template.
    - Navigate between "Home", "Highlighted Deviations", and "Extracted Clauses" using the top menu buttons.
    - View highlighted deviations between the contract and template, and extracted clauses from the contract.
+
+
+## Team Members
+   - Gopika M Panicker
+   - Jumana Jouhar
+   - Parvathy S
+   - Aiswarya Arun
+   - Bhagya Suresh Kumar
