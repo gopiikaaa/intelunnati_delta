@@ -1,5 +1,7 @@
 # Business Contract Validation
-![Frontend of Website](images/frntend.png)
+
+<img src="images/frntend.png" alt="Frontend of Website" width="800" />
+
 Welcome to the *Business Contract Validation* app, a powerful tool designed to help users classify contract content into specific clauses, identify deviations from templates, and highlight those differences. This app is built using Streamlit, leveraging the power of PyMuPDF for PDF processing and python-docx for DOCX processing, making it user-friendly and highly efficient.
 
 ## Objectives
@@ -9,7 +11,6 @@ The primary objective of this project is to provide a streamlined way to validat
 1. Extracting and classifying clauses from contract documents.
 2. Comparing the contract against a predefined template.
 3. Highlighting any deviations between the contract and the template.
-
 
 ## Uniqueness
 
@@ -29,21 +30,21 @@ The primary objective of this project is to provide a streamlined way to validat
 
 1. **Installation:**
    - Clone the repository:
-     ```
+     ```sh
      git clone https://github.com/gopiikaaa/Business-contract-validation.git
      cd business-contract-validation
      ```
    - Install dependencies:
-     ```
+     ```sh
      pip install -r requirements.txt
      ```
-   
+
 2. **Running the Application:**
    - Run the Streamlit application:
-     ```
+     ```sh
      streamlit run app.py
      ```
-   
+
 3. **Usage:**
    - Upload a contract document and a corresponding template.
    - Navigate between "Home", "Highlighted Deviations", and "Extracted Clauses" using the top menu buttons.
@@ -54,11 +55,12 @@ The primary objective of this project is to provide a streamlined way to validat
 ### Navigation
 
 - *Home*: Upload your contract and template documents.
-![to upload](images/upload.png)
+  <img src="images/upload.png" alt="to upload" width="400" />
 - *Highlighted Deviations*: View the original document, template, and highlighted deviations.
-![deviations](images/highlighted.png)
+  <img src="images/highlighted.png" alt="deviations" width="400" />
 - *Extracted Clauses*: View specific clauses extracted from the contract.
-![clauses](images/Clauses(2).png)
+  <img src="images/Clauses(2).png" alt="clauses" width="400" />
+
 ### Custom CSS
 
 - White background for the app with black font color.
