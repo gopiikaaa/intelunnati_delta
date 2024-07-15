@@ -55,11 +55,11 @@ The primary objective of this project is to provide a streamlined way to validat
 ### Navigation
 
 - *Home*: Upload your contract and template documents.
-  <img src="images/upload.png" alt="to upload" width="400" />
+  <img src="images/upload.png" alt="to upload" width="600" />
 - *Highlighted Deviations*: View the original document, template, and highlighted deviations.
-  <img src="images/highlighted.png" alt="deviations" width="400" />
+  <img src="images/highlighted.png" alt="deviations" width="600" />
 - *Extracted Clauses*: View specific clauses extracted from the contract.
-  <img src="images/Clauses(2).png" alt="clauses" width="400" />
+  <img src="images/Clauses(2).png" alt="clauses" width="600" />
 
 ### Custom CSS
 
