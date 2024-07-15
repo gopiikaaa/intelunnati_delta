@@ -58,7 +58,7 @@ The primary objective of this project is to provide a streamlined way to validat
 - *Highlighted Deviations*: View the original document, template, and highlighted deviations.
 ![deviations](images/highlighted.png)
 - *Extracted Clauses*: View specific clauses extracted from the contract.
-![clauses](images/clauses.png)
+![clauses](images/Clauses(2).png)
 ### Custom CSS
 
 - White background for the app with black font color.
